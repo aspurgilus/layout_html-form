@@ -12,19 +12,19 @@
   </head>
   <body>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application" method="post">
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>
           Personal information
         </legend>
 
         <label class="label">
           Surname:
-          <input name="surname">
+          <input name="surname" autocomplete="off">
         </label>
 
         <label class="label">
           Name:
-          <input name="name">
+          <input name="name" autocomplete="off">
         </label>
 
         <label class="label">
@@ -49,7 +49,7 @@
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>
           Registration
         </legend>
@@ -66,11 +66,15 @@
 
         <label class="label">
           Password:
-          <input name="password" type="password" required>
+          <input
+            name="password"
+            type="password"
+            required
+          >
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>
           An interesting fact about you!
         </legend>
@@ -83,7 +87,11 @@
 
         <label class="label">
           What is your favorite color?
-          <input name="color" type="color" value="#000">
+          <input
+            name="color"
+            type="color"
+            value="#000"
+          >
         </label>
 
         <label class="label">
@@ -102,18 +110,28 @@
 
         <label class="label">
           How do you rate our work?
-          <input name="rate" type="range" value="0">
+          <input
+            name="rate"
+            type="range"
+            value="0"
+          >
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset class="fieldset">
         <legend>
           Additional info:
         </legend>
 
         <label class="label">
           Comments:
-          <textarea name="comments" rows="2" cols="12"></textarea>
+          <textarea
+            name="comments"
+            rows="2"
+            cols="12"
+            minlength="3"
+            maxlength="255"
+          ></textarea>
         </label>
 
         <label class="label">
